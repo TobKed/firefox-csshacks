@@ -72,7 +72,9 @@ See the above repository for updates as well as full license text. */
   height: calc(var(--urlbar-min-height) - 2px - 2 * var(--urlbar-container-padding));
 }
 .urlbarView-body-inner{ border-top-style: none !important; }
-
+.searchmode-switcher[offscreen]{
+  top: 999px !important;
+}
 @media -moz-pref("userchrome.toolbars-below-content.tabs-at-bottom.enabled"){
   #TabsToolbar{
     order: 3
