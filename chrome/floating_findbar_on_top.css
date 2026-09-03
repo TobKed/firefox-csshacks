@@ -10,7 +10,6 @@ See the above repository for updates as well as full license text. */
 
 findbar{
   order: -1;
-  margin-bottom: -33px;
   position: relative;
   border-top: none !important;
   padding: 0 !important;
@@ -19,6 +18,8 @@ findbar{
   pointer-events: none;
   z-index: 1;
   white-space: nowrap;
+  grid-area: notificationbox !important;
+  margin-bottom: calc(0px - var(--findbar-height,34px));
 }
 
 .findbar-container > .findbar-find-fast{
